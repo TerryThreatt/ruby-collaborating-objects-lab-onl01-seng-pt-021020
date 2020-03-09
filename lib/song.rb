@@ -20,7 +20,8 @@ class Song
     artist_obj = Artist.find_or_create_by_name(artist_name)
     # binding.pry 
     song_obj.artist = artist_obj
-    artist_obj.songs << song_obj  
+    artist_obj.songs << song_obj 
+    song_obj
   end
 
   def artist_name=(name)
