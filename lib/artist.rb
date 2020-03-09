@@ -35,7 +35,13 @@ class Artist
   #   else 
   #     nil
   #   end 
-  # end 
+  
+  
+  end 
+  
+  def self.find(name) 
+    
+  end 
   
   def print_songs
     @songs.each do |song|
