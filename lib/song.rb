@@ -6,7 +6,7 @@ class Song
   
   def initialize(name)
     @name = name 
-    @@all << self 
+    @@all << self
   end 
   
    def self.all 
@@ -17,8 +17,9 @@ class Song
     song_name = filename.split(" - ")[1]
     artist_name = filename.split(" - ")[0]
     song = self.new(song_name)
-    song.artist= Artist.find_or_create_by_name(artist_name)
-    # binding.pry 
+    artist_obj = Artist.find_or_create_by_name(artist_name)
+    binding.pry 
+    song.artist = artist_obj
     song
   end
 
