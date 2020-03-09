@@ -40,6 +40,11 @@ class Artist
   end 
   
   def self.find(name) 
+    @@all.find {|artist_obj| artist_obj.name == name } 
+  end 
+  
+  def self.create_by_name(name)
+    artist = Artist.new(name)
     
   end 
   
