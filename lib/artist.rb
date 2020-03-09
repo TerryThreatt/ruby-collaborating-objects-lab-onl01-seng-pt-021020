@@ -23,19 +23,19 @@ class Artist
   end 
   
   def self.find_or_create_by_name(name)
-    if @@all.find do |artist|
-      # binding.pry 
-      artist.name == name 
-      artist
-    end 
-    elsif  
-       artist = Artist.new(name)
-       @@all << artist
-       artist
-    else 
-      nil
-    end 
-  end 
+  #   if @@all.find do |artist|
+  #     # binding.pry 
+  #     artist.name == name 
+  #     artist
+  #   end 
+  #   elsif  
+  #     artist = Artist.new(name)
+  #     @@all << artist
+  #     artist
+  #   else 
+  #     nil
+  #   end 
+  # end 
   
   def print_songs
     @songs.each do |song|
